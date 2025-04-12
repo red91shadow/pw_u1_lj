@@ -1,15 +1,134 @@
 <!DOCTYPE html><!--Cualquier Comentario-->
 <html lang="en"> <!--Elemenot raiz de todo -->
+
 <head><!-- configuracion de la pagina (no es visible para el usuario final)-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Nos sirve para paginas web responsiva-->
     <title>Mi primera pagina web</title> <!--Define le titulo de la pagina ( en la pestaña)-->
 </head>
+
 <body><!--Todo lo que el usuario visualiza en pantalla-->
-    <h1>Mi primera pagina web</h1>
-    <h3>Carrera de computacion</h3>
-    <h6>Joel Luna</h6>
-    <p>Este es mi primer parrafo de mi pagina web................</p>
-    <button>Aceptar</button>
+
+    <header>
+        <h1>Universidad Central del Ecuador</h1>
+        <h3>Carrera de computacion</h3>
+    </header><!--Cabecera de la pagina-->
+
+    <nav></nav> <!--Barra de navegacion-->
+
+    <section>
+        <!--Cabeceras de sercciones-->
+        <h1>Mi primera pagina web</h1>
+        <h6>Joel Luna</h6>
+
+        <!--Parrafos-->
+        <p>Este es mi primer parrafo de mi pagina web................</p>
+        <!--Parrafos mas cortos-->
+        <span>Parrafos mas cortes</span>
+        <!--Parrafos mas largos-->
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, dolore. Recusandae, magnam! Iure sint vero sit reprehenderit similique obcaecati illum!</p>
+    
+        <!--Textos-->
+        <strong>Texto de importancia que quiero resaltar </strong>
+        <br>
+        <b>Textos que no quiero dar relevancia</b>
+        <hr>
+        <em>Para textos en cursiva con importancia</em>
+        <br>
+        <i>Para texto en cursiva</i>
+        <br>
+        <u>Para texto subrrayado</u>
+        <br><!--Salto de linea-->
+        <hr><!--Salto de linea con una linea divisora-->
+        <s>Para texto eliminado</s>
+        <hr>
+        <mark>Para texto resaltado</mark>
+
+        <!--Listas-->
+        <ul>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Inventario</li>
+        </ul>
+
+        <ol>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Inventario</li>
+        </ol>
+
+        <!--Tablas-->
+        <table border="7">
+            <thead>
+                <!--el tr siempre es primero y representa una fila-->
+                <tr>
+                    <!--Como contenido de la fila se declara todas las columnas-->
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>CI</th>
+                    <th>Genero</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Por cada fila es un elemento html TR-->
+                <tr>
+                    <td>1</td>
+                    <td>Joel</td>
+                    <td>Luna</td>
+                    <td>1751409721</td>
+                    <td>Masculino</td>
+                    <td><button>Editar</button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Alice</td>
+                    <td>Lance</td>
+                    <td>1755646521</td>
+                    <td>Femenino</td>
+                    <td><button>Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--Contenedores ( Elementos que agrupan contenido)-->
+        <div></div>
+        <!--Son contenderoes/agrupadores:header, nav, seccion...etc-->
+
+        <!--Elementos que se usan para formularios-->
+        <!--El atributo accion sirve para decir la accion que ejecutara cuando de click en un botton del formulario-->
+        <form action="">
+            <label for="id_nombre">Nombre</label>
+            <input type="text" name="" id="id_nombre">
+            <label for="id_password">Password</label>
+            <input type="password" id="id_password">
+            <label for="id_fecha">Fecha Nacimiento</label>
+            <input type="date" id="id_fecha">
+            <label for="id_edad">Edad</label>
+            <input type="number" id="id_edad">
+            <button>Guardar</button>
+        </form>
+
+        <!--Multimedia-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png
+        " alt="No se puede renderizar" width="300" height="300">
+
+        <video controls>
+            <source src ="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
+        <button>Aceptar</button>
+
+    </section><!--Informacion principal-->
+
+    <aside></aside><!--Barra lateral-->
+
+    <footer>
+        <h3>Todos los Derechos Reservados</h3>
+    </footer><!--Pie de pagina-->
+
+    
 </body>
+
 </html>
