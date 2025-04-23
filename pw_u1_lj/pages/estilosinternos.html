@@ -1,17 +1,61 @@
 <!DOCTYPE html>
+<!--cuando hablamos de tipo de declaracion interna estamos hablando de una declaracion de los estilos a nivel de cabecera, se declara mediante el uso de un elemento html "Style" dentro de la cabezara de mi pagina web  -->
+<!-- Esta declaracion es mas reutilizable pero dentro de la misma pagina -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--Declaracion completa de mis estilos-->
+    <!-- Este selector deifine un estilo para los elemento h1-->
+    <style>
+       
+        h1 {
+            color:red;
+            background: green;
+            padding: 20px 10px 40px 5px;
+            width: 200px;
+            height: 70px;
+            border: dotted black 2px;
+            margin: 20px 80px;
+        }
+
+        h2 {
+            color: #5cdf8e;
+            background: rgb(180, 171, 34);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 12px ;
+            margin-top: 50px;
+            margin-bottom: 10px;
+            border-bottom: solid rebeccapurple 1px;
+        }
+
+        p {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:cornflowerblue ;
+            background: yellow;
+        }
+    </style>
 </head>
+
 <body>
     <header>
-
+        <h1>
+            Ecuador país amazónico
+        </h1>
     </header>
     <nav></nav>
-    <section></section>
+    <section>
+        <h1>Universidad Central del Ecuador</h1>
+        <h1>Carrera de computacion</h1>
+        <h2>Programacion Web</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis reiciendis minus quae qui facere. Commodi id, laborum ratione corporis doloribus, at maiores reiciendis esse dignissimos nam quos officiis quaerat, iusto veritatis aliquid nesciunt totam. Ullam a temporibus deserunt quis quia!</p>
+    </section>
     <aside></aside>
-    <footer></footer>
+    <footer>
+        <h1>Todos los derechos reservados</h1>
+    </footer>
 </body>
+
 </html>

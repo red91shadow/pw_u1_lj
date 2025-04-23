@@ -1,0 +1,15 @@
+h1 {
+    color: blue;
+    background: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+    color: #5cdf8e;
+    background: rgb(180, 171, 34);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px ;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border-bottom: solid rebeccapurple 1px;
+}
