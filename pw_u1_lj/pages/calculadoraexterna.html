@@ -11,21 +11,18 @@
          <h1>Calculadora UCE</h1>
      </header>
      <section>
-         <div id="id_espacio"></div>
-         <label id="id_label_1" for="id_numero_1">Numero 1</label>
-         <input id="id_numero_1" type="number">
-         <label id="id_label_2" for="id_numero_2">Numero 2</label>
-         <input id="id_numero_2" type="text">
-         
-         <!-- los atribulos que comienzan con "on" refieren a una accion -->
-         <button onclick="document.getElementById('id_label_1').style.background='blue' " >Cambiar Color</button>
-         <button onclick="cambiarColor('id_label_2','green')">Cambiar Color</button>
-         <button onclick="cambiarColor('id_label_2','yellow')">Cambiar Color 2</button>
-         
-         <button onclick="agregarBoton()">Agregar elemento</button>
-         <button id="id_error" >Error</button>
-         <button onclick="eliminar('id_error')">Eliminar</button>
- 
+        <div id="id_espacio"></div>
+        <label id="id_label_1" for="id_numero1">Numero 1</label>
+        <input id="id_numero1" type="number">
+        <label id="id_label_2" for="id_numero2">Numero 2</label>
+        <input id="id_numero2" type="number">
+        <p id="id_resultado">Resultado: </p>
+        <button onclick="evaluarOperacion('+')">Sumar</button>
+        <button onclick="evaluarOperacion('-')">Restar</button>
+        <button onclick="evaluarOperacion('/')">Dividir</button>
+        <button onclick="evaluarOperacion('*')">Multiplicar</button>
+      
+        <button onclick="fundamentos()">Fundamentos de JS</button>
  
  
      </section>
