@@ -1,0 +1,65 @@
+.container {
+    color: rgb(42, 22, 158);
+    display: flex; /*prepara todo el display para poderlo poner arriba, abajo......activa el flexbox para poder orientarlos de manera vertical u horizontal*/
+    justify-content: center; /* nos permite justificar nuestros elementos, cnetralo de forma horizontal*/
+    align-items: center; /*centra verticalmente los elementos*/
+}
+
+body{
+    background-color: #59abe3;
+}
+
+p:before{ /*el before sirve para que antes que se renderice el contenido se active el type */
+    content: attr(type);
+    display: block; /*generar el poner en esta caso el elemento p como un solo elemento horizontalmente*/
+    margin: 3px;
+    font-size: 18px;
+    color: #5a5a5a;
+}
+
+input{
+    width: 270px;
+    border: none;
+    border-bottom: 2px solid #bebed2;
+    /*background: none;   sirve para quitarle el color*/
+}
+
+
+input:focus{
+    outline: none;
+    border-bottom: 3px solid #7c7ccf;
+}
+
+h2, header{ /* si quiero aplicar el mismo estilo a dos elementos */
+    margin: 10px;
+    width: 180px;
+    color: #191974;
+    border-bottom: 3px solid #2798e4;
+}
+
+header{
+    font-size: 35px;
+    width: 260px;
+}
+
+.formulario{
+    border-radius: 10px;
+    background: #e6e6e6;
+    padding: 30px 25px;
+    box-shadow: 7px 5px #397196;
+}
+
+button{
+    background: #a7cae1;
+    padding: 5px;
+    font-size: 20px;
+    color:#203e52 ;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.centra-boton{
+    display: flex;
+    justify-content: center;
+}

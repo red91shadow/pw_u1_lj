@@ -277,3 +277,5 @@ function desestructuracionObjeto({ marca, color }) {
     console.log(marca);
     console.log(color);
 }
+
+// FORMULARIOS  ( capturar informacion, mostrar informacion )
