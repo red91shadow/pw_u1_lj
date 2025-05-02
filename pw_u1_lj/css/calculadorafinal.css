@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: 75px 75px 75px 75px; /*define el numero y tamaño de mi grilla */
+  grid-template-rows: 75px 75px 75px 75px 75px 75px; /*defino el taño y cantidad de filas */
+  padding: 25px;
+  /*border: 1px solid black;*/
+  border-radius: 15px;
+  background: #0b90e9; /*una practica para resaltar un elemento es que el */
+  box-shadow: 5px 10px #034774;
+}
+
+body {
+  background: #6ab7eb;
+}
+
+.display-calculadora {
+  grid-column: span 4;
+  text-align: right;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+  background: #034774;
+  color: white;
+}
+
+button {
+  cursor: pointer;
+  margin: 3px;
+  border-radius: 10px;
+  border: none;
+  background: #3077a7;
+  font-family: digital-7;
+  font-size: 20px;
+  color: white;
+}
+
+.columna-2 {
+    grid-column: span 2;
+}
+
+
+button:active{
+    background-color: #43a5e6 ;
+}
